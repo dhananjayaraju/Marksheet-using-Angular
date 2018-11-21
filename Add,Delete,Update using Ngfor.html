@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="col-md-12">
+		<input type ="text" placeholder="Maths" [(ngModel)]="Math">
+		<input type="text" placeholder="Science" [(ngModel)]="Science">
+		<input type="text" placeholder="Physics" [(ngModel)]="Physics">
+		<input type="text" placeholder="Chemistry" [(ngModel)]="Chemistry">
+		<input type="text" placeholder="English" [(ngModel)]="English">
+		<button class="btn btn-primary" (click)="submit()">{{btnName}}
+		</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<td>s.no</td>
+					<td>maths</td>
+					<td>science</td>
+					<td>physics</td>
+					<td>chemistry</td>
+					<td>english</td>
+					<td>Edit</td>
+					<td>Delete</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let getValue of ListAllValues; let i=index;">
+					<td>{{i+1}}</td>
+					<td>{{getValue.math}}</td>
+					<td>{{getValue.science}}</td>
+					<td>{{getValue.physics}}</td>
+					<td>{{getValue.chemistry}}</td>
+					<td>{{getValue.english}}</td>
+					<td (click)="edit(i)" style="cursor:pointer;">Edit</td>
+					<td (click)="delete(i)" style="cursor:pointer;">Delete</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
