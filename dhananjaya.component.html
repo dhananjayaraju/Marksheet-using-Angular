@@ -1,0 +1,65 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<input type="text" class="form-control" [(ngModel)]="telugu" placeholder="Telugu" (keyup)="teluguInput(telugu)">
+		</div>
+		<div class="col-md-2">
+			<input type="text" class="form-control" [(ngModel)]="english" placeholder="English" (keyup)="englishInput(english)">
+		</div>
+		<div class="col-md-2">
+			<input type="text" class="form-control" [(ngModel)]="Maths" placeholder="Maths" (keyup)="mathsInput(maths)">
+		</div>
+		<div class="col-md-2">
+			<input type="text" class="form-control" [(ngModel)]="science" placeholder="Science" (keyup)="scienceInput(science)">
+		</div>
+		<div class="col-md-2">
+			<input type="text" class="form-control" [(ngModel)]="social" placeholder="Social" (keyup)="socialInput(social)">
+		</div>
+		<div class="col-md-2">
+			<button class="btn btn-primary" (click)="add()">Add</button>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		
+
+		<!-- <table class="table">
+			<thead>
+				<tr>
+					<th><h3>Subject8839901735</h3></th>
+					<th><h3>Grade</h3></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let c of dj">
+					<td>{{c.telugu}}</td>
+					<td>{{c.english}}</td>
+					<td>{{c.maths}}</td>
+					<td>{{c.science}}</td>
+					<td>{{c.social}}</td>
+				</tr>
+				<tr>
+					<td>Telugu</td>
+					<td>{{teluguGrade}}</td>
+				</tr>
+				<tr>
+					<td>English</td>
+					<td>{{englishGrade}}</td>
+				</tr>
+				<tr>
+					<td>Maths</td>
+					<td>{{mathsGrade}}</td>
+				</tr>
+				<tr>
+					<td>Science</td>
+					<td>{{scienceGrade}}</td>
+				</tr>
+				<tr>
+					<td>Social</td>
+					<td>{{socialGrade}}</td>
+				</tr>
+			</tbody>
+		</table> -->
+	</div>
+</div>
